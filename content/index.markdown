@@ -1,3 +1,9 @@
+---
+menu:
+  text: Home
+  position: 0
+---
+
 Rip is a functional, object-oriented programming language. Check out this convoluted hello world:
 
     class {
