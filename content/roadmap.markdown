@@ -22,6 +22,9 @@ The roadmap below is of course subject to change, but these are the milestones I
     * map - `{ :a : 1, lambda() : 5 }`
     * key-value - `:key : :value`
     * range - `1..5` or `1...10` (two dots mean inclusive range. three dots mean range end is excluded. `1..9` is essentially the same as `1...10`)
+    * date - `2012-02-12` (date, time and datetime literals are always UTC. time and datetime can have an optional +/- timezone offset in hours)
+    * time - `00:24:00.0329+0400` (with optional fractional seconds and timezone offset)
+    * datetime - `2012-02-12T00:24:00` (literal date and time separated by a capital T)
   * module loaders
     * file - This will be the most common module loader. The file loader is pretty much does the same thing node's `require` keyword does.
     * url - Just like the file loader, but with full URLs. :)
@@ -37,9 +40,6 @@ The roadmap below is of course subject to change, but these are the milestones I
   * distributed package repository - A website to make finding third-party packages easy. The actual packages will be distributed; only package meta-data will be in the registry.
   * advanced object literals (or sooner if easy)
     * heredoc (with interpolation)
-    * date - `2012-02-12` (date, time and datetime literals are always UTC. time and datetime can have an optional +/- timezone offset in hours)
-    * time - `00:24:00.0329+4` (with optional fractional seconds and timezone offset)
-    * datetime - `2012-02-12T00:24:00`
     * version - `v0.1.3` (as in [SemVer](http://semver.org/) need to evaluate usefulness)
   * unit object literals (à la CSS)
     * Also need a way to register new units that fits in with current language semantics
