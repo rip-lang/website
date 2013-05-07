@@ -21,7 +21,7 @@ The roadmap below is of course subject to change, but these are the milestones I
     * list - `[1, 2, 3]`
     * map - `{ :a : 1, lambda() : 5 }`
     * key-value - `:key : :value`
-    * range - `1..5` or `1...10`
+    * range - `1..5` or `1...10` (two dots mean inclusive range. three dots mean range end is excluded. `1..9` is essentially the same as `1...10`)
   * module loaders
     * file - This will be the most common module loader. The file loader is pretty much does the same thing node's `require` keyword does.
     * url - Just like the file loader, but with full URLs. :)
