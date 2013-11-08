@@ -24,7 +24,7 @@ Though this example is overly complex, it does demonstrate several things:
 
 Additionally it would be helpful to know that...
 
-* `System` is a predefined object which defines several properties for standard classes.
+* `System` is a predefined reference with properties referencing standard classes.
 * Classes have a property, `Class#@` aka the prototype, which is used to define what instances will look like (similar to JavaScript's prototype, but not ugly).
 * Lambdas have a property, `Lambda#@`, which is a reference to the current receiver (similar to JavaScript's `this` keyword when used inside a function).
 
