@@ -1,0 +1,6 @@
+- page.sub_content.each do |post|
+  %article.post
+    %header
+      %div.h
+        %a{ :href => post.url_path }= post.title
+    %section= post.render_partial
