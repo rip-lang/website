@@ -28,7 +28,7 @@ Additionally it would be helpful to know that...
 * Classes have a property, `Class#@` aka the prototype, which is used to define what instances will look like (similar to JavaScript's prototype, but not ugly).
 * Lambdas have a property, `Lambda#@`, which is a reference to the current receiver (similar to JavaScript's `this` keyword when used inside a function).
 
-More practically speaking Rip allows one to write code like the following:
+Practically speaking Rip allows one to write code like the following:
 
     url = System.URL.HTTP.new('www.example.com', 80, 'username', 'password') / :path / :to / :resource ? :query: 'search terms' ? :abc: :xyz
     expect(url.to_string()) to_equal 'http://username:password@www.example.com/path/to/resource?query=search%20terms&abc=xyz'
