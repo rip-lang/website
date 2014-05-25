@@ -2,3 +2,6 @@
 :title: Rip Programming Language
 :subtitle: a functional language with object-oriented syntax
 :github: 'rip-lang/rip'
+:google:
+  :analytics: UA-41028959-1
+  :analytics_domain: rip-lang.org
