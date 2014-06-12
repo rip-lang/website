@@ -6,15 +6,17 @@ menu:
 
 Rip is a functional, object-oriented programming language. Check out this convoluted hello world:
 
-    class {
-    	@.initialize = -> (name) {
-    		@.name = name
-    	}
+```language-rip
+class {
+	@.initialize = -> (name) {
+		@.name = name
+	}
 
-    	@.greet = -> (standard_out) {
-    		standard_out("Hello, #{@.name}")
-    	}
-    }.new(:World).greet(System.IO.out)
+	@.greet = -> (standard_out) {
+		standard_out("Hello, #{@.name}")
+	}
+}.new(:World).greet(System.IO.out)
+```
 
 Though this example is overly complex, it does demonstrate several things:
 
@@ -30,7 +32,9 @@ Additionally it would be helpful to know that...
 
 Practically speaking Rip allows one to write code like the following:
 
-    url = URL.new('www.example.com', 80, 'username', 'password') / :resource / :path ? :query: 'search terms' ? :abc: :xyz
-    expect(url.to_string()) to_equal 'http://username:password@www.example.com/resource/path?query=search%20terms&abc=xyz'
+```language-rip
+url = URL.new('www.example.com', 80, 'username', 'password') / :resource / :path ? :query: 'search terms' ? :abc: :xyz
+expect(url.to_string()) to_equal 'http://username:password@www.example.com/resource/path?query=search%20terms&abc=xyz'
+```
 
 If you like what you see, stay tuned: the rest of this site is forthcoming.
