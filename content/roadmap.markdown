@@ -41,12 +41,15 @@ The roadmap below is of course subject to change, but these are the milestones I
   * type restrictions for class, lambda, list, map, key-value (similar syntax to C# generics)
     * range is implicitly type restricted
   * lambda overloads
-        # lambda (`foo`) with two overloads
-        #   the second overload takes a single parameter (`a`)
-        foo = => {
-        	-> {}
-        	-> (a) {}
-        }
+
+    ```language-rip
+     # lambda (`foo`) with two overloads
+     #   the second overload takes a single parameter (`a`)
+     foo = => {
+     	-> {}
+     	-> (a) {}
+     }
+     ```
 
 * v1.0 - In addition to everything above working (and working well), the following items need to be accounted for before the official first release.
   * Standard libraries will be useful enough to build real, production systems with without re-inventing all the wheels.
